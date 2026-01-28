@@ -1,0 +1,17 @@
+// String utilities module
+
+fn length(s) {
+    return len(s);
+}
+
+fn concat(a, b) {
+    return a + b;
+}
+
+fn repeat(s, n) {
+    let result = "";
+    for (let i = 0; i < n; i = i + 1) {
+        result = result + s;
+    }
+    return result;
+}

@@ -1,0 +1,127 @@
+// Test script for advanced features
+print("=== py++ v0.2.0 Advanced Features Test ===");
+print("");
+
+// Test 1: Math functions
+print("TEST 1: Math Functions");
+print("sqrt(16) = " + sqrt(16));
+print("abs(-5) = " + abs(-5));
+print("min(3, 1, 4, 1, 5) = " + min(3, 1, 4, 1, 5));
+print("max(3, 1, 4, 1, 5) = " + max(3, 1, 4, 1, 5));
+print("round(3.14159, 2) = " + round(3.14159, 2));
+print("floor(3.7) = " + floor(3.7));
+print("ceil(3.2) = " + ceil(3.2));
+print("gcd(12, 8) = " + gcd(12, 8));
+print("lcm(12, 8) = " + lcm(12, 8));
+print("");
+
+// Test 2: String functions
+print("TEST 2: String Functions");
+let text = "Hello World";
+print("Original: " + text);
+print("uppercase: " + uppercase(text));
+print("lowercase: " + lowercase(text));
+print("capitalize: " + capitalize(text));
+
+print("startsWith 'Hello': " + startsWith(text, "Hello"));
+print("endsWith 'World': " + endsWith(text, "World"));
+print("includes 'World': " + includes(text, "World"));
+print("indexOf 'World': " + indexOf(text, "World"));
+
+print("substring(0, 5): " + substring(text, 0, 5));
+print("replace(World, Python): " + replace(text, "World", "Python"));
+print("repeat('Ha', 3): " + repeat("Ha", 3));
+print("trim('  spaces  '): '" + trim("  spaces  ") + "'");
+print("");
+
+// Test 3: Type information
+print("TEST 3: Type Information");
+print("typeof(42): " + typeof(42));
+print("typeof('hello'): " + typeof("hello"));
+print("typeof(true): " + typeof(true));
+print("typeof(null): " + typeof(null));
+print("type(42): " + type(42));
+print("type('hello'): " + type("hello"));
+print("");
+
+// Test 4: Basic array operations
+print("TEST 4: Array Operations");
+let arr = array(1, 2, 3, 4, 5);
+print("Created array: " + arr);
+print("length(): " + length(arr));
+print("includes(3): " + includes(arr, 3));
+print("indexOf(4): " + indexOf(arr, 4));
+print("join(', '): " + join(arr, ", "));
+
+arr.push(6);
+print("After push(6): " + arr);
+
+let first = arr.shift();
+print("After shift(): " + arr);
+print("Shifted value: " + first);
+
+arr.reverse();
+print("After reverse(): " + arr);
+
+arr.sort();
+print("After sort(): " + arr);
+
+let sliced = arr.slice(1, 4);
+print("slice(1, 4): " + sliced);
+print("");
+
+// Test 5: Object operations
+print("TEST 5: Object Operations");
+let obj = object();
+obj.name = "Mahdi";
+obj.age = 25;
+obj.city = "Tech City";
+print("Created object: " + obj);
+print("Get name: " + obj.name);
+print("Get age: " + obj.age);
+
+obj.job = "Developer";
+print("After adding job: " + obj);
+
+print("Has name: " + obj.has("name"));
+print("Has email: " + obj.has("email"));
+
+let keys = obj.keys();
+print("Keys: " + keys);
+
+let vals = obj.values();
+print("Values: " + vals);
+
+let obj2 = object();
+obj2.email = "mahdi@example.com";
+obj2.phone = "123-456";
+let merged = obj.merge(obj2);
+print("Merged objects: " + merged);
+print("");
+
+// Test 6: Set operations
+print("TEST 6: Set Operations");
+let s = set(1, 2, 3, 4, 5);
+print("Created set: " + s);
+print("size(): " + size(s));
+print("has(3): " + has(s, 3));
+print("has(10): " + has(s, 10));
+
+s.add(6);
+print("After add(6): " + s);
+
+s.remove(2);
+print("After remove(2): " + s);
+
+let s2 = set(3, 4, 5, 6, 7);
+let union_result = s.union(s2);
+print("Union with {3,4,5,6,7}: " + union_result);
+
+let inter_result = s.intersection(s2);
+print("Intersection with {3,4,5,6,7}: " + inter_result);
+
+let diff_result = s.difference(s2);
+print("Difference with {3,4,5,6,7}: " + diff_result);
+print("");
+
+print("=== All Tests Completed Successfully! ===");

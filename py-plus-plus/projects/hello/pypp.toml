@@ -1,0 +1,9 @@
+[project]
+name = "hello"
+version = "0.1.0"
+author = "Your Name"
+description = "A simple hello world py++ program"
+
+[build]
+main = "src/main.pypp"
+output = "build"

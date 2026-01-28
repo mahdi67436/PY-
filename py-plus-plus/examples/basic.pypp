@@ -1,0 +1,20 @@
+// Basic example: Hello World and Variables
+
+let greeting = "Hello, py++!";
+print(greeting);
+
+let x = 10;
+let y = 20;
+let z = x + y;
+
+print("x = " + str(x));
+print("y = " + str(y));
+print("sum = " + str(z));
+
+// Functions
+fn greet(name: string) {
+    print("Hello, " + name + "!");
+}
+
+greet("Alice");
+greet("Bob");

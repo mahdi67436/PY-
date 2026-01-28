@@ -1,0 +1,40 @@
+import sys;
+
+fn add(a, b) {
+    return a + b;
+}
+
+fn subtract(a, b) {
+    return a - b;
+}
+
+fn multiply(a, b) {
+    return a * b;
+}
+
+fn divide(a, b) {
+    if (b == 0) {
+        print("Error: Cannot divide by zero");
+        return null;
+    }
+    return a / b;
+}
+
+fn main() {
+    print("Simple Calculator");
+    print("=================");
+    
+    let x = 100;
+    let y = 25;
+    
+    print("x = " + str(x));
+    print("y = " + str(y));
+    print("");
+    
+    print(str(x) + " + " + str(y) + " = " + str(add(x, y)));
+    print(str(x) + " - " + str(y) + " = " + str(subtract(x, y)));
+    print(str(x) + " * " + str(y) + " = " + str(multiply(x, y)));
+    print(str(x) + " / " + str(y) + " = " + str(divide(x, y)));
+}
+
+main();

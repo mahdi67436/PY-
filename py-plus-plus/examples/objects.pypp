@@ -1,0 +1,27 @@
+// Advanced example: Object operations
+print("=== Object Operations ===");
+
+let person = object(name: "Mahdi", age: 25, city: "Tech City");
+print("Person: " + person);
+
+print("Name: " + person.name);
+print("Age: " + person.age);
+
+person.age = 26;
+print("Updated age: " + person.age);
+
+person.job = "Developer";
+print("Added job: " + person.job);
+
+print("Has 'name'? " + person.has("name"));
+print("Has 'email'? " + person.has("email"));
+
+// Object properties
+print("\n=== Object Properties ===");
+print("Keys: " + person.keys());
+print("Values: " + person.values());
+
+// Merge objects
+let contact = object(email: "mahdi@example.com", phone: "123-456-7890");
+let merged = person.merge(contact);
+print("Merged: " + merged);

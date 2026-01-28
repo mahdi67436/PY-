@@ -1,0 +1,40 @@
+// Advanced example: String operations
+print("=== String Operations ===");
+
+let text = "hello world";
+print("Original: " + text);
+
+print("Uppercase: " + uppercase(text));
+print("Lowercase: " + lowercase("HELLO"));
+print("Capitalized: " + capitalize(text));
+
+// String search
+print("\n=== String Search ===");
+let sentence = "The quick brown fox jumps";
+
+print("Starts with 'The'? " + startsWith(sentence, "The"));
+print("Ends with 'jumps'? " + endsWith(sentence, "jumps"));
+print("Includes 'quick'? " + includes(sentence, "quick"));
+print("Index of 'brown': " + indexOf(sentence, "brown"));
+
+// String manipulation
+print("\n=== String Manipulation ===");
+let str = "hello world";
+print("Substring [0:5]: " + substring(str, 0, 5));
+print("Substring [6:]: " + substring(str, 6));
+print("Replaced: " + replace(str, "world", "python"));
+print("Repeated: " + repeat("na", 4));
+
+// Split
+print("\n=== Split ===");
+let words = split("apple,banana,orange", ",");
+print("Words: " + words);
+
+let chars = split("hello", "");
+print("Characters: " + chars);
+
+// Trim
+print("\n=== Trim ===");
+let messy = "  spaces around  ";
+print("Before: '" + messy + "'");
+print("After: '" + trim(messy) + "'");

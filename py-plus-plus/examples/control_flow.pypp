@@ -1,0 +1,30 @@
+// Control flow examples
+
+fn test_if() {
+    let age = 18;
+    if (age >= 18) {
+        print("You are an adult");
+    } else {
+        print("You are a minor");
+    }
+}
+
+fn test_for() {
+    print("For loop (0-4):");
+    for (let i = 0; i < 5; i = i + 1) {
+        print(i);
+    }
+}
+
+fn test_while() {
+    print("While loop:");
+    let count = 0;
+    while (count < 3) {
+        print("count: " + str(count));
+        count = count + 1;
+    }
+}
+
+test_if();
+test_for();
+test_while();

@@ -1,0 +1,40 @@
+// Simple calculator
+
+fn add(a, b) {
+    return a + b;
+}
+
+fn subtract(a, b) {
+    return a - b;
+}
+
+fn multiply(a, b) {
+    return a * b;
+}
+
+fn divide(a, b) {
+    if (b == 0) {
+        print("Error: Division by zero");
+        return 0;
+    }
+    return a / b;
+}
+
+fn main() {
+    print("Simple Calculator");
+    print("================");
+    
+    let num1 = 10;
+    let num2 = 5;
+    
+    print("Number 1: " + str(num1));
+    print("Number 2: " + str(num2));
+    print("");
+    
+    print("Add: " + str(add(num1, num2)));
+    print("Subtract: " + str(subtract(num1, num2)));
+    print("Multiply: " + str(multiply(num1, num2)));
+    print("Divide: " + str(divide(num1, num2)));
+}
+
+main();

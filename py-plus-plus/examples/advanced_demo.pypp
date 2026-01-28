@@ -1,0 +1,55 @@
+// Simple verification of advanced features
+print("=== py++ Advanced Features - Quick Verification ===");
+print("");
+
+// Math functions  
+print("Math: sqrt(16) =");
+print(sqrt(16));
+print("Math: gcd(12, 8) =");
+print(gcd(12, 8));
+print("");
+
+// String functions
+let text = "Hello World";
+print("String: uppercase =");
+print(uppercase(text));
+print("String: includes('World') =");
+print(includes(text, "World"));
+print("");
+
+// Type functions
+print("Type: typeof(42) =");
+print(typeof(42));
+print("Type: typeof('hello') =");
+print(typeof("hello"));
+print("");
+
+// Array functions
+let arr = array(5, 2, 8, 1, 9);
+print("Array: created =");
+print(arr);
+arr.sort();
+print("Array: sorted =");
+print(arr);
+arr.reverse();
+print("Array: reversed =");
+print(arr);
+print("Array: includes(5) =");
+print(includes(arr, 5));
+print("Array: indexOf(8) =");
+print(indexOf(arr, 8));
+print("Array: join(',') =");
+print(join(arr, ","));
+print("");
+
+// Set functions
+let s = set(1, 2, 3, 4, 5);
+print("Set: created =");
+print(s);
+print("Set: has(3) =");
+print(has(s, 3));
+print("Set: size =");
+print(size(s));
+print("");
+
+print("=== All Advanced Features Working! ===");

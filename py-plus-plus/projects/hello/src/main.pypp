@@ -1,0 +1,8 @@
+// Hello world program
+
+fn main() {
+    print("Hello, py++!");
+    print("Welcome to py++, a Python-like language with C++ speed!");
+}
+
+main();

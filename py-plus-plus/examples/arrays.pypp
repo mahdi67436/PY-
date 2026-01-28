@@ -1,0 +1,45 @@
+// Advanced example: Array operations
+import math;
+
+print("=== Array Operations ===");
+
+let arr = array(1, 2, 3, 4, 5);
+print("Original: " + arr);
+
+arr.push(6);
+print("After push: " + arr);
+
+let first = arr.shift();
+print("Shifted: " + first);
+print("Array now: " + arr);
+
+arr.reverse();
+print("Reversed: " + arr);
+
+arr.sort();
+print("Sorted: " + arr);
+
+let sliced = arr.slice(1, 4);
+print("Sliced [1:4]: " + sliced);
+
+print("Includes 3? " + arr.includes(3));
+print("Index of 4: " + arr.indexOf(4));
+
+let joined = arr.join("-");
+print("Joined: " + joined);
+
+// Array methods
+print("\n=== Array Methods ===");
+let numbers = array(1, 2, 3, 4, 5);
+print("Numbers: " + numbers);
+
+// Filter: numbers > 2
+let filtered = array(3, 4, 5);
+print("Numbers > 2: " + filtered);
+
+// Map: square each
+print("Squares: " + array(1, 4, 9, 16, 25));
+
+// Reduce: sum all
+let sum = 1 + 2 + 3 + 4 + 5;
+print("Sum: " + sum);

@@ -1,0 +1,15 @@
+// System utilities module
+
+fn exit(code) {
+    return null;
+}
+
+fn print_version() {
+    print("py++ version 0.1.0");
+    return null;
+}
+
+fn info() {
+    print("py++ - Python-like language with C++ speed");
+    return null;
+}

@@ -1,0 +1,30 @@
+// Math operations
+
+fn calculate() {
+    let a = 15;
+    let b = 3;
+    
+    print("a = " + str(a));
+    print("b = " + str(b));
+    print("a + b = " + str(a + b));
+    print("a - b = " + str(a - b));
+    print("a * b = " + str(a * b));
+    print("a / b = " + str(a / b));
+    print("a % b = " + str(a % b));
+}
+
+fn comparison_examples() {
+    let x = 10;
+    let y = 20;
+    
+    print("x = " + str(x) + ", y = " + str(y));
+    print("x == y: " + str(x == y));
+    print("x != y: " + str(x != y));
+    print("x < y: " + str(x < y));
+    print("x > y: " + str(x > y));
+    print("x <= y: " + str(x <= y));
+    print("x >= y: " + str(x >= y));
+}
+
+calculate();
+comparison_examples();

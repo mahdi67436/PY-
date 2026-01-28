@@ -1,0 +1,9 @@
+[project]
+name = "calculator"
+version = "0.1.0"
+author = "Your Name"
+description = "A simple calculator written in py++"
+
+[build]
+main = "src/main.pypp"
+output = "build"

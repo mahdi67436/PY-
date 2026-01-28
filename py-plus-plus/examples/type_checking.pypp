@@ -1,0 +1,41 @@
+// Advanced example: Type checking and validation
+print("=== Type Checking ===");
+
+let num = 42;
+let str = "hello";
+let bool_val = true;
+let null_val = null;
+
+print("isNumber(42)? " + isNumber(num));
+print("isNumber('hello')? " + isNumber(str));
+
+print("isString('hello')? " + isString(str));
+print("isString(42)? " + isString(num));
+
+print("isBoolean(true)? " + isBoolean(bool_val));
+print("isBoolean(42)? " + isBoolean(num));
+
+print("isNull(null)? " + isNull(null_val));
+print("isNull(42)? " + isNull(num));
+
+// Type conversion
+print("\n=== Type Conversion ===");
+print("int('123') = " + int("123"));
+print("float('3.14') = " + float("3.14"));
+print("str(42) = " + str(42));
+print("bool(1) = " + bool(1));
+print("bool(0) = " + bool(0));
+print("bool('') = " + bool(""));
+
+// Type names
+print("\n=== Type Names ===");
+print("typeof(42) = " + typeof(42));
+print("typeof('hello') = " + typeof(str));
+print("typeof(true) = " + typeof(bool_val));
+print("typeof(null) = " + typeof(null_val));
+
+let arr = array(1, 2, 3);
+print("typeof([1,2,3]) = " + typeof(arr));
+
+let obj = object(a: 1, b: 2);
+print("typeof({a:1}) = " + typeof(obj));

@@ -1,0 +1,42 @@
+// Advanced example: Math operations
+print("=== Advanced Math ===");
+
+// Basic math
+let a = 16;
+let b = 25;
+let c = 100;
+
+print("sqrt(16) = " + sqrt(16));
+print("sqrt(25) = " + sqrt(25));
+print("sqrt(100) = " + sqrt(100));
+
+// Trigonometry
+print("\n=== Trigonometry ===");
+print("sin(0) = " + sin(0));
+print("cos(0) = " + cos(0));
+print("tan(0) = " + tan(0));
+
+// Logarithm & Exponential
+print("\n=== Log & Exp ===");
+print("log(100, 10) = " + log(100, 10));
+print("exp(1) = " + round(exp(1), 2));
+
+// Rounding
+print("\n=== Rounding ===");
+let pi = 3.14159;
+print("round(3.14159) = " + round(pi));
+print("round(3.14159, 2) = " + round(pi, 2));
+print("floor(3.14159) = " + floor(pi));
+print("ceil(3.14159) = " + ceil(pi));
+
+// GCD & LCM
+print("\n=== GCD & LCM ===");
+print("gcd(12, 8) = " + gcd(12, 8));
+print("lcm(12, 8) = " + lcm(12, 8));
+print("gcd(100, 50) = " + gcd(100, 50));
+print("lcm(100, 50) = " + lcm(100, 50));
+
+// Min & Max
+print("\n=== Min & Max ===");
+print("min(5, 2, 8, 1) = " + min(5, 2, 8, 1));
+print("max(5, 2, 8, 1) = " + max(5, 2, 8, 1));

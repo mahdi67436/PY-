@@ -1,0 +1,18 @@
+// Fibonacci sequence generator
+
+fn fibonacci(n: int) -> int {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+fn main() {
+    print("Fibonacci sequence:");
+    for (let i = 0; i < 10; i = i + 1) {
+        let fib = fibonacci(i);
+        print(fib);
+    }
+}
+
+main();
